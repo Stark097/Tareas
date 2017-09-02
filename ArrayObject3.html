@@ -16,7 +16,7 @@
   					apellido: "Bonilla"
 					};
 
-				var Docente={
+				var docente={
 					nombre: "Enmanuel",
  					 apellido: "Jarquin"
  					 Cargo: "Ingeniero"
@@ -32,6 +32,21 @@
 					nombre:"Ingeieria en computacion",
 					año: "IV año"
 					};
+
+				var arreglo=[];
+
+				for(var i=0 ; i<4 ;i++){
+					if(i==0){
+					  arreglo[i]=alumnos.nombre + " " + alumnos.apellido;
+					  }	else  if(i==1){
+ 						arreglo[i]=docente.nombre + " " + docente.apellido;
+ 						}else if(i==2){
+ 							arreglo[i]=clase.nombre + " " + clase.turno + " "+ clase.horario;
+ 						}else if(i==3){
+ 							arreglo[i]=carrera.nombre + " "+ carrera.año;
+ 						}
+ 
+				};
 
 		</script>
 			
